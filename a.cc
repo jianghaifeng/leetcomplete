@@ -43,10 +43,26 @@ public:
 
 */
 
-TEST(test, all) {
+
+class SolutionTest : public ::testing::Test {
+public:
+    virtual void setUp() {
+    }
+    virtual void tearDown() {
+    }
+
     Solution s;
+};
+
+TEST_F(SolutionTest, t1) {
     EXPECT_EQ(3, s.longestCommonSubsequence("abcde", "ace"));
+}
+
+TEST_F(SolutionTest, t2) {
     EXPECT_EQ(3, s.longestCommonSubsequence("abc", "abc"));
+}
+
+TEST_F(SolutionTest, t3) {
     EXPECT_EQ(0, s.longestCommonSubsequence("abc", "def"));
 }
 
