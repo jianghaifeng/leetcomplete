@@ -7,3 +7,6 @@
 
 ### backpack
 1986-minimum-number-of-work-sessions-to-finish-the-tasks
+
+### mono stack
+739-daily-temperatures  
