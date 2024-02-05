@@ -17,4 +17,9 @@
 ### double pointer
 76-minimum-window-substring  
 
+### sort and find
+3025-find-the-number-of-ways-to-place-people-i  
+
+
+
 

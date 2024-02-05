@@ -12,17 +12,20 @@ class Solution {
 public:
     int numberOfPairs(vector<vector<int>>& points) {
         int ans = 0;
-        map<int, vector<int>> mx;
-        for (auto p : points) mx[p[0]].push_back(p[1]);
-        for (auto &p : mx) sort(p.second.begin(), p.second.end());
-        for (auto &p : mx) {
-            for (int i=0; i<p.second.size(); i++) {
-                int last = INT_MIN;
-                if (i > 0) last = p.second[i-1], ans++;
-                for (auto &q : mx) {
-                    if (q.first <= p.first) continue;
-                    auto it = upper_bound(q.second.begin(), q.second.end(), p.second[i]);
-                    if (it == q.second.begin()) continue;
+        vector<vector<int>> vx(51);
+        for (auto p : points) vx[p[0]].push_back(p[1]);
+        for (int i=0; i<51; i++) {
+            if (vx[i].empty()) continue;
+            sort(vx[i].begin(), vx[i].end());
+        }
+        for (int i=0; i<51; i++) {
+            for (int j=0; j<vx[i].size(); j++) {
+                int last = -1;
+                if (j > 0) last = vx[i][j-1], ans++;
+                for (int k=i+1; k<51; k++) {
+                    if (vx[k].empty()) continue;
+                    auto it = upper_bound(vx[k].begin(), vx[k].end(), vx[i][j]);
+                    if (it == vx[k].begin()) continue;
                     --it;
                     if (*it > last) last = *it, ans++;
                 }
