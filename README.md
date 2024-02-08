@@ -5,6 +5,10 @@
 576-out-of-boundary-paths  
 629-k-inverse-pairs-array  
 1043-partition-array-for-maximum-sum  
+279-perfect-squares  
+
+
+
 
 
 ### backpack
