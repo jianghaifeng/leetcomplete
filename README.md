@@ -7,6 +7,9 @@
 1043-partition-array-for-maximum-sum  
 279-perfect-squares  
 
+### Trie
+3043-find-the-length-of-the-longest-common-prefix   
+
 
 
 ### kmp
