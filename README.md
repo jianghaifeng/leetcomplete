@@ -11,6 +11,9 @@
 3043-find-the-length-of-the-longest-common-prefix   
 
 
+### fenwick Tree (Binary indexed tree)
+3072-distribute-elements-into-two-arrays-ii  
+
 
 ### kmp
 3036-number-of-subarrays-that-match-a-pattern-ii
