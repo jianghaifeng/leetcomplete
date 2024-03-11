@@ -9,6 +9,7 @@
 
 ### Trie
 3043-find-the-length-of-the-longest-common-prefix   
+3076-shortest-uncommon-substring-in-an-array  
 
 
 ### fenwick Tree (Binary indexed tree)
