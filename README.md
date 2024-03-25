@@ -11,6 +11,7 @@
 ### Trie
 3043-find-the-length-of-the-longest-common-prefix   
 3076-shortest-uncommon-substring-in-an-array  
+3093-longest-common-suffix-queries  
 
 ### sliding window  
 930-binary-subarrays-with-sum  
