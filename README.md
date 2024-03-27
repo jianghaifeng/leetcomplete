@@ -15,6 +15,7 @@
 
 ### sliding window  
 930-binary-subarrays-with-sum  
+2958-length-of-longest-subarray-with-at-most-k-frequency  
 
 ### fenwick Tree (Binary indexed tree)
 3072-distribute-elements-into-two-arrays-ii  
