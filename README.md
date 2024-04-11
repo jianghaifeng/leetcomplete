@@ -28,6 +28,7 @@
 
 ### mono stack
 739-daily-temperatures  
+402-remove-k-digits  
 
 ### double pointer
 76-minimum-window-substring  
