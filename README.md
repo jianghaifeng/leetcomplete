@@ -48,6 +48,7 @@
 3067-count-pairs-of-connectable-servers-in-a-weighted-tree-network  
 3068-find-the-maximum-sum-of-node-values  
 
-
+### trap water
+42-trapping-rain-water
 
 
