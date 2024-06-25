@@ -4,6 +4,7 @@
 629-k-inverse-pairs-array  
 1043-partition-array-for-maximum-sum  
 279-perfect-squares  
+3193-count-the-number-of-inversion.cc  
 
 ## greedy  
 452-minimum-number-of-arrows-to-burst-balloons  
