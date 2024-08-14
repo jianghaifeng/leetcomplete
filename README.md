@@ -59,5 +59,7 @@
 ### BFS
 802-find-eventual-safe-states  
 
+### binary search 
+719-find-k-th-smallest-pair-distance    
 
 
