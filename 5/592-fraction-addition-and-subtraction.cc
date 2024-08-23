@@ -32,28 +32,22 @@ public:
     }
 
     pair<int,int> get(string& s, int& pos) {
-        string sa = "0", sb = "1";
-        auto dv = s.find_first_of('/', pos);
-        sa = s.substr(pos, dv-pos);
-        pos = dv+1;
-        auto op = s.find_first_of("+-", pos);
-        if (op == string::npos) {
-            sb = s.substr(pos);
-            pos = s.length();
-        } else {
-            sb = s.substr(pos, op-pos);
-            pos = op;
-        }
-        return {stoi(sa), stoi(sb)};
+        int a = 0, b = 1, i = pos;
+        while (i < s.length() && s[i] != '/') i++;
+        a = stoi(s.substr(pos, i-pos));
+        pos = i + 1;
+        while (i < s.length() && s[i] != '+' && s[i] != '-') i++;
+        b = stoi(s.substr(pos, i-pos));
+        pos = i;
+        return {a, b};
     }
 
     string fractionAddition(string expression) {
         pair<int,int> ans = {0, 1};
         int pos = 0;
-        while (true) {
+        while (pos < expression.length()) {
             auto p = get(expression, pos);
             ans = add(ans, p);
-            if (pos == expression.length()) break;
         }
         return tos(ans);
     }
