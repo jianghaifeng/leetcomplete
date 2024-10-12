@@ -45,6 +45,7 @@
 ### heap   
 2402-meeting-rooms-iii    
 3092-most-frequent-ids   
+2406-divide-intervals-into-minimum-number-of-groups
 
 ### DFS
 3067-count-pairs-of-connectable-servers-in-a-weighted-tree-network  
