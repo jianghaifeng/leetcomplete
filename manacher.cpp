@@ -18,7 +18,7 @@ public:
         for (int i=2; i<sn.length(); i++) {
             if (i <= r) v[i] = min(r-i, v[2*c - i]);
             while (sn[i-v[i]-1] == sn[i+v[i]+1]) v[i]++;
-            if (v[i] > r) r = v[i], c = i;
+            if (i+v[i] > r) r = v[i], c = i;
         }
         int maxCenter = max_element(v.begin(), v.end()) - v.begin();
         int maxLen = v[maxCenter];
