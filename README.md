@@ -70,3 +70,7 @@
 1106-parsing-a-boolean-expression   
 
 
+### bitset   
+3181-maximum-total-reward-using-operations-ii   
+
+
