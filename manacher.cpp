@@ -8,7 +8,6 @@ using namespace std;
 
 class Solution {
 public:
-
     string longestPalindrome(string s) {
         string sn = "^#";
         for (auto c : s) sn.push_back(c), sn.push_back('#');
